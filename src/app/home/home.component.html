@@ -1,8 +1,15 @@
 
 <div class="container">
+    <div #backdrop class="backdrop">
+        <div class="highlights" [innerHTML]="highlightedText">
+          <!-- cloned text with <mark> tags here -->
+        </div>
+      </div>
     <textarea 
-        type="text" 
-        [mention]="items" 
-        [mentionConfig]="mentionConfig">
+        [mention]="users" 
+        [mentionConfig]="mentionConfig"
+        [(ngModel)]="comment"
+        #textarea
+        (scroll)="handleScroll()">
     </textarea>
 </div>

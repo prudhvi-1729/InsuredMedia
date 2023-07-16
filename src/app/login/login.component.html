@@ -1,0 +1,9 @@
+<div class="container">
+    <input class="form-control" id="username" placeholder="User Name" [(ngModel)]="data.username">
+    <input class="form-control" id="password" type="password" placeholder="password" [(ngModel)]="data.password">
+    <br>
+    <div align="center">
+        <button class="btn btn-primary" (click)="onSubmit()">Submit</button>
+    </div>
+    <span *ngIf="error">Wrong credentials</span>
+</div>

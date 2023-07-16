@@ -11,6 +11,12 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MentionModule } from 'angular-mentions';
+import { LoginComponent } from './login/login.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatInputModule } from '@angular/material/input';
+import { AuthserviceService } from './services/authservice.service';
+import { AuthGuardService } from './services/auth-guard.service';
 
 @NgModule({
   declarations: [
@@ -19,17 +25,21 @@ import { MentionModule } from 'angular-mentions';
     GalleryComponent,
     AboutComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
+    MatFormFieldModule,
     AppRoutingModule,
     FormsModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
-    MentionModule
+    MentionModule,
+    MatDialogModule,
+    MatInputModule
   ],
-  providers: [],
+  providers: [AuthserviceService,AuthGuardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

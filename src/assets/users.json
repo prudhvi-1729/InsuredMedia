@@ -1,12 +1,33 @@
 [
-    {
-        "userid" : "abc@media.com",
-        "password":"abc123",
-        "username":"tom"
-    },
-    {
-        "userid" : "def@media.com",
-        "password":"def123",
-        "username":"dick"
-    }
+      {
+        "id": 1,
+        "username": "John",
+        "age": 26,
+        "password":"admin"
+      },
+      {
+        "id": 2,
+        "username": "Susan Que",
+        "age": 45,
+        "password":"admin"
+      },
+      {
+        "id": 3,
+        "username": "Andrew",
+        "age": 53,
+        "password":"admin"
+      },
+      {
+        "id": 4,
+        "username": "John Doe",
+        "age": 53,
+        "password":"admin"
+      },
+      {
+        "id": 5,
+        "username": "prudhvi",
+        "age": 26,
+        "password":"admin"
+      }
 ]
+  

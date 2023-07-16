@@ -1,5 +1,40 @@
 .container{
     margin-left: 15%;
-    margin-top: 2%;
+    margin-top: 5%;
 }
 
+.container,
+.backdrop,
+.highlights,
+textarea {
+    width: 200px;
+    height: 100px;
+}
+
+textarea {
+    border-radius: 0;
+    color: #444;
+    background-color: transparent;
+    position: absolute;
+    z-index: 2;
+}
+
+.backdrop {
+    overflow: auto;
+    background-color: #fff;
+    z-index: 1;
+    position: absolute;
+}
+
+.highlights {
+    background-color: transparent;
+    color: transparent;
+    overflow: hidden;
+    padding-top: 2.6px;
+}
+
+
+mark {
+    color: transparent;
+    background-color: #d4e9ab;
+}
