@@ -3,6 +3,10 @@
     margin-top: 5%;
 }
 
+#main-wrapper{
+    margin-top: 20px;
+}
+
 .container,
 .backdrop,
 .highlights,
